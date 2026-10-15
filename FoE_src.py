@@ -2,7 +2,7 @@ import json
 import os
 from typing import Dict, List, Union, Callable, Any
 
-# ========== AUTHORS: Adam H. Ahmadi 23160330 - Steve M. Aguilar 23166613 ==========
+# ========== AUTHORS: Steve M. Aguilar - Adam H. Ahmadi ==========
 
 GAME_CONFIG = {
     "intro_text": """
@@ -409,32 +409,32 @@ Your journey begins now.
             "interaction": {
                 "prompt": "You unfold the parchment and study the sketch:",
                 "display": """
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | # | # | # | # | # | # | # | # | # | # | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | T |   |   |   |   |   |   |   |   | E | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | # | # | # |   | # | # | # |   | # |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | T |   |   |   | # |   |   |   |   |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | # | # |   | # | # |   | # | # | # |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # |   |   |   |   |   |   | # |   |   |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # |   | # | # |   | # | # | # |   | # |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # |   | # | T |   | # |   |   |   | # |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # |   | # | # |   | # |   | # |   | # |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # |   | T | # |   | S |   | # |   |   |   | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
-| # | # | # | # | # | ↓ | # | # | # | # | # | # |
-+---+---+---+---+---+---+---+---+---+---+---+---+
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | # | # | # | # | # | # | # | # | # | # | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | T |   |   |   |   |   |   |   |   | E | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | # | # | # |   | # | # | # |   | # |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | T |   |   |   | # |   |   |   |   |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | # | # |   | # | # |   | # | # | # |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # |   |   |   |   |   |   | # |   |   |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # |   | # | # |   | # | # | # |   | # |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # |   | # | T |   | # |   |   |   | # |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # |   | # | # |   | # |   | # |   | # |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # |   | T | # |   | S |   | # |   |   |   | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
+                    | # | # | # | # | # | ↓ | # | # | # | # | # | # |
+                    +---+---+---+---+---+---+---+---+---+---+---+---+
 
-S = Start, ↓ = Retreat (Return to Cave), T = Trap, E = Exit, # = Wall
-"""
+                    S = Start, ↓ = Retreat (Return to Cave), T = Trap, E = Exit, # = Wall
+                    """
             }
         },
         "enchanted_sword": {
@@ -447,19 +447,19 @@ S = Start, ↓ = Retreat (Return to Cave), T = Trap, E = Exit, # = Wall
             "description": "Show available commands",
             "action": lambda state: {
                 "output": """
-Commands:
-- left/right/forward/behind: Move in a direction 
-- examine: Examine area 
-- examine [item]: Examine an item in your inventory
-- take [item]: Pick up an item
-- inventory: View your items
-- use [item]: Use an item in the current location
-- save: Save the game
-- load: Load saved game
-- map: View an ASCII map
-- help: Show this help message
-- quit: Exit the game
-"""
+                    Commands:
+                    - left/right/forward/behind: Move in a direction 
+                    - examine: Examine area 
+                    - examine [item]: Examine an item in your inventory
+                    - take [item]: Pick up an item
+                    - inventory: View your items
+                    - use [item]: Use an item in the current location
+                    - save: Save the game
+                    - load: Load saved game
+                    - map: View an ASCII map
+                    - help: Show this help message
+                    - quit: Exit the game
+                    """
             }
         },
         "go": {

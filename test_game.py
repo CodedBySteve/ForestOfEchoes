@@ -1,5 +1,5 @@
 import pytest
-from SteveAguilar_23166613_FoE import (
+from FoE_src import (
     handle_movement,
     handle_take_item,
     handle_examine,
